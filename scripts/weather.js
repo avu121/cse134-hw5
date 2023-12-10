@@ -20,11 +20,9 @@ class WeatherWidget extends HTMLElement {
     }
 
     connectedCallback() {
-        // update weather data every second
+        // update weather on page load
         const weatherRequest = new XMLHttpRequest();
-        this.interval = setInterval(() => {
-            this.updateWeatherData(weatherRequest);
-        }, 1000);
+        this.updateWeatherData(weatherRequest);
     }
 
     updateWeatherData(weatherRequest) {
