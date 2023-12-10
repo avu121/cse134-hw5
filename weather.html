@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Widget</title>
+        <script src="/scripts/weather.js"></script>
+        <style>
+            .night-theme {
+                background-color : #131862;
+                color : white;
+            }
+            h1 {
+                padding-bottom : 2rem;
+            }
+            body {
+                text-align : center;
+                font-family : Arial, Helvetica, sans-serif;
+                background-color : #82CAFF;
+                color : white;
+            }
+            weather-widget {
+                display : block;
+                border : 2px solid white;
+                padding : 2rem 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Current Weather in San Diego</h1>
+        <weather-widget>
+            <noscript>
+                <style>
+                    p {
+                        font-size : 2rem;
+                    }
+                </style>
+                <p>Current Weather Conditions Unavailable</p>
+            </noscript>
+        </weather-widget>
+        <footer>
+            <cite>Icons by Yusuf Onaldi</cite>
+            <p>Check out my other page: </p>
+            <a href="/stars.html">Star Rating Page</a>
+        </footer>
+    </body>
+</html>
